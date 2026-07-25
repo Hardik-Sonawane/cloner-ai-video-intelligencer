@@ -47,9 +47,9 @@ Create a `.env` file in the project root:
 ```env
 GEMINI_API_KEY=your_gemini_api_key
 GROQ_API_KEY=your_groq_api_key
-LANGCHAIN_TRACING_V2=true
-LANGCHAIN_API_KEY=your_langsmith_api_key
-LANGCHAIN_PROJECT=your_langsmith_project_name
+LANGSMITH_TRACING_V2=true
+LANGSMITH_API_KEY=your_langsmith_api_key
+LANGSMITH_PROJECT=your_langsmith_project_name
 ```
 
 ## Run Locally
