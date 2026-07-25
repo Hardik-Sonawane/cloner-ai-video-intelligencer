@@ -40,24 +40,7 @@ https://github.com/user-attachments/assets/515e9443-d3f6-4d14-99b4-6e63cc2b28e0
 - yt-dlp
 - ffmpeg
 
-## Environment Variables
 
-Create a `.env` file in the project root:
-
-```env
-GEMINI_API_KEY=your_gemini_api_key
-GROQ_API_KEY=your_groq_api_key
-LANGSMITH_TRACING_V2=true
-LANGSMITH_API_KEY=your_langsmith_api_key
-LANGSMITH_PROJECT=your_langsmith_project_name
-```
-
-## Run Locally
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
 
 ## Project Workflow
 
