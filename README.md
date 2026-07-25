@@ -1,52 +1,82 @@
 # Video-Intel-AI
 
-An AI-powered platform that transforms local and YouTube videos into searchable knowledge using transcription, semantic search, Retrieval-Augmented Generation (RAG), and Gemini-powered  cross-question answering.
+An AI-powered video intelligence platform that converts local videos and YouTube videos into searchable knowledge using transcription, semantic search, Retrieval-Augmented Generation (RAG), and Gemini-powered question answering with LangSmith tracing.
 
 ## Streamlit - link
-   https://ai-video-intelligence-knowledge-synthesis-platform-6rqpdgmav5a.streamlit.app/
+
+https://ai-video-intelligence-knowledge-synthesis-platform-6rqpdgmav5a.streamlit.app/
+
 ##
-##  🎥 Demo Video
+
+## Demo Video
 
 https://github.com/user-attachments/assets/515e9443-d3f6-4d14-99b4-6e63cc2b28e0
 
+## Project Features
 
-##  Project Features 
-
-- Upload local videos
-- Process YouTube videos
-- Multilingual Support
-- Groq Whisper transcription
-- Gemini Embeddings
-- ChromaDB Vector Database
-- RAG-based Question Answering
-- Multi-video processing
-- Streamlit Interface
+- Upload and process local video files
+- Process YouTube videos from URLs
+- Extract audio from videos
+- Transcribe speech with Groq Whisper
+- Generate timestamped transcript segments
+- Split transcript content into searchable chunks
+- Create Gemini embeddings
+- Store vectors in ChromaDB
+- Retrieve relevant context using MMR search
+- Ask questions across one or multiple videos
+- Get source-aware answers with video names and timestamps
+- Track LLM calls and token usage with LangSmith
+- Streamlit interface for upload, processing, transcript preview, and chat
 
 ## Tech Stack Used
 
 - Python
 - Streamlit
 - LangChain
+- LangSmith
 - Gemini 2.5 Flash
 - Gemini Embeddings
 - ChromaDB
 - Groq Whisper
 - yt-dlp
+- ffmpeg
 
-##  Project Workflow
+## Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+GROQ_API_KEY=your_groq_api_key
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_API_KEY=your_langsmith_api_key
+LANGCHAIN_PROJECT=your_langsmith_project_name
+```
+
+## Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Project Workflow
 
 ```mermaid
 flowchart TD
-    A[Video<br/>Local / YouTube URLs]
-    --> B[Audio Extraction]
-    --> C[Transcription<br/>Groq Whisper]
-    --> D[Chunking]
-    --> E[Gemini Embeddings]
-    --> F[ChromaDB Vector Store]
-    --> G[Retriever<br/>MMR Search]
-    --> H[Gemini 2.5 Flash LLM]
-    --> I[Answer Generation & Follow-up Questions]
+    A[Video<br/>Local Upload / YouTube URL]
+    --> B[Audio Extraction<br/>ffmpeg]
+    --> C[Transcription<br/>Groq Whisper Large v3]
+    --> D[Timestamped Segments]
+    --> E[Chunking]
+    --> F[Gemini Embeddings]
+    --> G[ChromaDB Vector Store]
+    --> H[Retriever<br/>MMR Search]
+    --> I[Gemini 2.5 Flash Chat Model]
+    --> J[RAG Answer<br/>Sources + Timestamps]
+    --> K[LangSmith Tracing<br/>Token Usage]
 ```
+
 ##
 
 Author
