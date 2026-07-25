@@ -4,8 +4,7 @@ An AI-powered video intelligence platform that converts local videos and YouTube
 
 ## Streamlit - link
 
-https://ai-video-intelligence-knowledge-synthesis-platform-6rqpdgmav5a.streamlit.app/
-
+https://video-intel-ai-a4c5djydemgntx8kfezs2d.streamlit.app/
 ##
 
 ## Demo Video
