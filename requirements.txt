@@ -16,4 +16,5 @@ ffmpeg-python==0.2.0
 imageio-ffmpeg
 
 python-dotenv==1.1.1
-langsmith==0.3.45
+langsmith
+langchain-text-splitters
