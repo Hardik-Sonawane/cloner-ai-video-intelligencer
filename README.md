@@ -59,10 +59,8 @@ flowchart TD
     --> K[LangSmith Tracing<br/>Token Usage]
 ```
 
-##
+## Author
 
-Author
+**Sonawane Hardik**
 
-**Vipul Singh**
-
-linkedin: https://www.linkedin.com/in/vipul-singh2026/
+GitHub: https://github.com/Hardik-Sonawane
