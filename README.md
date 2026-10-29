@@ -4,7 +4,7 @@ An AI-powered video intelligence platform that converts local videos and YouTube
 
 ## Streamlit - link
 
-https://video-intel-ai-a4c5djydemgntx8kfezs2d.streamlit.app/
+https://cloner-ai-video-intelligencer-uwaeukr4konfaxzxmcot2u.streamlit.app/
 ##
 
 ## Demo Video
