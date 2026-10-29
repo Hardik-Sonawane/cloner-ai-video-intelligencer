@@ -1,11 +1,12 @@
 from pathlib import Path
+import shutil
 import ffmpeg
 import imageio_ffmpeg
 
 TEMP_DIR = Path("temp")
 TEMP_DIR.mkdir(exist_ok=True)
 
-FFMPEG_EXE = imageio_ffmpeg.get_ffmpeg_exe()
+FFMPEG_EXE = shutil.which("ffmpeg") or imageio_ffmpeg.get_ffmpeg_exe()
 
 
 def extract_audio(video_path):
